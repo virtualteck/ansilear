@@ -46,9 +46,7 @@
         hostname: "{{ netapp_hostname }}"
         username: "{{ netapp_username }}"
         password: "{{ netapp_password }}"
-        ```
----
-
+     ```
 ### Snapmirror playbook for data migrations
 1. create dynamic inventory using bash
   1. Log in to storage controller via SSH
