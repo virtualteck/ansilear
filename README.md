@@ -45,7 +45,8 @@
         size_unit: gb
         hostname: "{{ netapp_hostname }}"
         username: "{{ netapp_username }}"
-        password: "{{ netapp_password }}" ```
+        password: "{{ netapp_password }}"
+        ```
 ---
 
 ### Snapmirror playbook for data migrations
