@@ -33,7 +33,7 @@
     https: False
 
 7. Once LUN increase completed now write task to increase lun size command
-8. ```
+```
     - name: Resize LUN
       netapp.ontap.na_ontap_lun:
         state: present
@@ -46,7 +46,7 @@
         hostname: "{{ netapp_hostname }}"
         username: "{{ netapp_username }}"
         password: "{{ netapp_password }}"
-     ```
+ ```
 ### Snapmirror playbook for data migrations
 1. create dynamic inventory using bash
   1. Log in to storage controller via SSH
@@ -55,7 +55,7 @@
   4. pass the list of luns as inventory to ansible playbook
 2. take this dynamic inventory pass to playbook
 3. create a task to create snapmirrors relation ships for data migrations
-4. ```
+```
   - name: Create SnapMirror
   na_ontap_snapmirror:
     state: present
@@ -68,4 +68,4 @@
     hostname: "{{ netapp_hostname }}"
     username: "{{ netapp_username }}"
     password: "{{ netapp_password }}"
-   ``` 
+``` 
